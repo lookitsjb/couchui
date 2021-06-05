@@ -1,0 +1,557 @@
+<?xml version="1.0"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+
+	<StaticAnimation item="PWDummy">
+		<ScreenID>PWDummy</ScreenID>
+		<Location>
+			<X>-1</X>
+			<Y>-1</Y>
+		</Location>
+		<Size>
+			<CX>8</CX>
+			<CY>8</CY>
+		</Size>
+		<Animation>A_CornerSquare</Animation>
+	</StaticAnimation>
+
+	<TextureInfo item="AttackIndicator.tga">
+		<Size>
+			<CX>512</CX>
+			<CY>512</CY>
+		</Size>
+	</TextureInfo>
+
+	<Ui2DAnimation item="A_AttackIndicator">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>AttackIndicator.tga</Texture>
+			<Location>
+				<X>0</X>
+				<Y>0</Y>
+			</Location>
+			<Size>
+				<CX>338</CX>
+				<CY>73</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+
+	<StaticAnimation item="A_AttackIndicatorAnim">
+		<ScreenID>A_AttackIndicatorAnim</ScreenID>
+		<Animation>A_AttackIndicator</Animation>
+	</StaticAnimation>
+
+	<Label item="PW_HPText">
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>2</X>
+			<Y>2</Y>
+		</Location>
+		<Size>
+			<CX>30</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>hp</Text>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+	</Label>
+
+	<Label item="Player_HPNumber">
+		<ScreenID>HPNumberLabel1</ScreenID>
+		<EQType>70</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>30</X>
+			<Y>2</Y>
+		</Location>
+		<Size>
+			<CX>140</CX>
+			<CY>12</CY>
+		</Size>
+		<Text>9999/9999</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+	</Label>
+
+	<Label item="PW_LevelText">
+		<EQType>2</EQType>
+		<Font>1</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>124</X>
+			<Y>27</Y>
+		</Location>
+		<Size>
+			<CX>89</CX>
+			<CY>12</CY>
+		</Size>
+		<Text>99</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<AlignCenter>true</AlignCenter>
+	</Label>
+
+	<Label item="PW_ClassText">
+		<Font>1</Font>
+		<EQType>3</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>124</X>
+			<Y>38</Y>
+		</Location>
+		<Size>
+			<CX>89</CX>
+			<CY>12</CY>
+		</Size>
+		<Text>TextValue1000</Text>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+		<AlignCenter>true</AlignCenter>
+	</Label>
+
+	<Label item="PW_DeityText">
+		<Font>1</Font>
+		<EQType>4</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>124</X>
+			<Y>49</Y>
+		</Location>
+		<Size>
+			<CX>89</CX>
+			<CY>24</CY>
+		</Size>
+		<Text>TextValue1000</Text>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+		<NoWrap>false</NoWrap>
+		<AlignCenter>true</AlignCenter>
+	</Label>
+
+	<Label item="PW_WeightNum">
+		<EQType>24</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>310</X>
+			<Y>2</Y>
+		</Location>
+		<Size>
+			<CX>25</CX>
+			<CY>12</CY>
+		</Size>
+		<Text>99</Text>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<Label item="PW_MPText">
+	</Label>
+
+	<Label item="Player_ManaNumber">
+		<ScreenID>ManaNumbLabel</ScreenID>
+	</Label>
+
+	<Gauge item="Player_HP">
+		<ScreenID>PlayerHP</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>2</X>
+			<Y>30</Y>
+		</Location>
+		<Size>
+			<CX>100</CX>
+			<CY>8</CY>
+		</Size>
+		<TextOffsetY>-50</TextOffsetY>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<GaugeOffsetX>0</GaugeOffsetX>
+		<FillTint>
+			<R>0</R>
+			<G>240</G>
+			<B>0</B>
+		</FillTint>
+		<EQType>1</EQType>
+		<GaugeDrawTemplate>
+			<Background>A_GaugeBackground</Background>
+			<Fill>A_GaugeFill</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<Label item="Player_HPLabel">
+		<ScreenID>HPLabel</ScreenID>
+		<Font>1</Font>
+		<EQType>19</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>104</X>
+			<Y>27</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>12</CY>
+		</Size>
+		<Text>100</Text>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+	</Label>
+
+	<Gauge item="Player_Mana">
+		<ScreenID>PlayerMana</ScreenID>
+	</Gauge>
+
+	<Label item="Player_ManaLabel">
+		<ScreenID>ManaLabel</ScreenID>
+	</Label>
+
+	<Gauge item="Player_Fatigue">
+		<ScreenID>PlayerFatigue</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>2</X>
+			<Y>41</Y>
+		</Location>
+		<Size>
+			<CX>100</CX>
+			<CY>8</CY>
+		</Size>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<GaugeOffsetX>0</GaugeOffsetX>
+		<FillTint>
+			<R>240</R>
+			<G>240</G>
+			<B>0</B>
+		</FillTint>
+		<EQType>3</EQType>
+		<GaugeDrawTemplate>
+			<Background>A_GaugeBackground</Background>
+			<Fill>A_GaugeFill</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<Label item="Player_FatigueLabel">
+		<ScreenID>FatigueLabel</ScreenID>
+		<Font>1</Font>
+		<EQType>21</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>104</X>
+			<Y>38</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>12</CY>
+		</Size>
+		<Text>100</Text>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+	</Label>
+
+	<Gauge item="PW_ExpGauge">
+		<ScreenID>ExpGauge</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>2</X>
+			<Y>52</Y>
+		</Location>
+		<Size>
+			<CX>100</CX>
+			<CY>8</CY>
+		</Size>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<GaugeOffsetX>0</GaugeOffsetX>
+		<FillTint>
+			<R>220</R>
+			<G>150</G>
+			<B>0</B>
+		</FillTint>
+		<LinesFillTint>
+			<R>80</R>
+			<G>120</G>
+			<B>240</B>
+		</LinesFillTint>
+		<DrawLinesFill>true</DrawLinesFill>
+		<EQType>4</EQType>
+		<GaugeDrawTemplate>
+			<Background>A_GaugeBackground</Background>
+			<Fill>A_GaugeFill</Fill>
+			<LinesFill>A_GaugeLinesFill</LinesFill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<Label item="PW_EXP_Percentage">
+		<Font>1</Font>
+		<EQType>26</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>104</X>
+			<Y>49</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>12</CY>
+		</Size>
+		<Text>Playername123456</Text>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+	</Label>
+
+	<Gauge item="PW_BreathGauge">
+		<ScreenID>BreathGauge</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>2</X>
+			<Y>63</Y> <!-- was 74 -->
+		</Location>
+		<Size>
+			<CX>100</CX>
+			<CY>8</CY>
+		</Size>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<GaugeOffsetX>0</GaugeOffsetX>
+		<FillTint>
+			<R>0</R>
+			<G>240</G>
+			<B>240</B>
+		</FillTint>
+		<EQType>8</EQType>
+		<GaugeDrawTemplate>
+			<Background>A_GaugeBackground</Background>
+			<Fill>A_GaugeFill</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<Label item="PW_Breath_Percentage">
+		<Font>1</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>104</X>
+			<Y>60</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>12</CY>
+		</Size>
+		<Text>---</Text>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+	</Label>
+
+	<Label item="Player_HPPercLabel">
+		<ScreenID>HPPerLabel</ScreenID>
+	</Label>
+
+	<Gauge item="Pet_HP">
+		<ScreenID>PetHP</ScreenID>
+	</Gauge>
+
+	<Label item="Player_ManaPercLabel">
+		<ScreenID>ManaPerLabel</ScreenID>
+	</Label>
+
+	<Label item="Player_FatiguePercLabel">
+		<ScreenID>FatiguePerLabel</ScreenID>
+	</Label>
+
+	<!-- Target Specific Data -->
+	<Gauge item="Target_HP">
+		<ScreenID>TargetHP</ScreenID>
+		<Font>2</Font>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>235</X>
+			<Y>17</Y>
+		</Location>
+		<Size>
+			<CX>100</CX>
+			<CY>21</CY>
+		</Size>
+		<GaugeOffsetY>13</GaugeOffsetY>
+		<GaugeOffsetX>0</GaugeOffsetX>
+		<TextOffsetX>0</TextOffsetX>
+		<TextOffsetY>0</TextOffsetY>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference />
+		<FillTint>
+			<R>240</R>
+			<G>0</G>
+			<B>0</B>
+		</FillTint>
+		<LinesFillTint>
+			<R>220</R>
+			<G>220</G>
+			<B>0</B>
+		</LinesFillTint>
+		<EQType>6</EQType>
+		<GaugeDrawTemplate>
+			<Background>A_GaugeBackground</Background>
+			<Fill>A_GaugeFill</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<Label item="Target_HPLabel">
+		<ScreenID>HPLabel</ScreenID>
+		<Font>1</Font>
+		<EQType>29</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>213</X>
+			<Y>27</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>12</CY>
+		</Size>
+		<Text>Playername123456</Text>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<Gauge item="Target_Casting_Gauge">
+		<ScreenID>Gauge</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>235</X>
+			<Y>41</Y>
+		</Location>
+		<Size>
+			<CX>100</CX>
+			<CY>8</CY>
+		</Size>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<FillTint>
+			<R>240</R>
+			<G>0</G>
+			<B>240</B>
+		</FillTint>
+		<EQType>7</EQType>
+		<GaugeDrawTemplate>
+			<Background>A_GaugeBackground</Background>
+			<Fill>A_GaugeFill</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<Label item="Target_Casting_SpellName">
+		<ScreenID />
+		<EQType>134</EQType>
+		<Font>1</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>235</X>
+			<Y>48</Y>
+		</Location>
+		<Size>
+			<CX>100</CX>
+			<CY>24</CY>
+		</Size>
+		<Text />
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>false</NoWrap>
+		<AlignCenter>true</AlignCenter>
+	</Label>
+
+	<Label item="Target_HPPercLabel">
+		<ScreenID>HPPercLabel</ScreenID>
+	</Label>
+
+	<Screen item="PlayerWindow">
+		<!--<ScreenID/>-->
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>516</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>345</CX>
+			<CY>81</CY>
+		</Size>
+		<Text>Player</Text>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference>The Breath Meter</TooltipReference>
+		<DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
+		<Style_Titlebar>false</Style_Titlebar>
+		<Style_Closebox>false</Style_Closebox>
+		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>false</Style_Sizable>
+		<Pieces>PW_HPText</Pieces>
+		<Pieces>Player_HPNumber</Pieces>
+		<Pieces>PW_MPText</Pieces>
+		<Pieces>Player_ManaNumber</Pieces>
+		<Pieces>PW_LevelText</Pieces>
+		<Pieces>PW_ClassText</Pieces>
+		<Pieces>PW_DeityText</Pieces>
+		<Pieces>PW_WeightNum</Pieces>
+		<Pieces>Player_HP</Pieces>
+		<Pieces>Pet_HP</Pieces>
+		<Pieces>Player_HPLabel</Pieces>
+		<Pieces>Player_Mana</Pieces>
+		<Pieces>Player_ManaLabel</Pieces>
+		<Pieces>PW_ExpGauge</Pieces>
+		<Pieces>PW_EXP_Percentage</Pieces>
+		<Pieces>Player_Fatigue</Pieces>
+		<Pieces>Player_FatigueLabel</Pieces>
+		<Pieces>PW_BreathGauge</Pieces>
+		<Pieces>PW_Breath_Percentage</Pieces>
+
+		<Pieces>Target_HP</Pieces>
+		<Pieces>Target_HPLabel</Pieces>
+		<Pieces>Target_HPPercLabel</Pieces>
+		<Pieces>Target_Casting_Gauge</Pieces>
+		<Pieces>Target_Casting_SpellName</Pieces>
+
+		<Pieces>A_AttackIndicatorAnim</Pieces>
+	</Screen>
+
+</XML>
