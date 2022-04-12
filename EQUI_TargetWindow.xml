@@ -57,8 +57,8 @@
 			<Y>242</Y>
 		</Location>
 		<Size>
-			<CX>144</CX>
-			<CY>56</CY>
+			<CX>0</CX>
+			<CY>0</CY>
 		</Size>
 		<Text>TARGET</Text>
 		<Style_VScroll>false</Style_VScroll>

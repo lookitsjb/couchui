@@ -197,8 +197,10 @@
 			<Y>312</Y>
 		</Location>
 		<Size>
-			<CX>50</CX>
-			<CY>24</CY>
+			<!-- <CX>50</CX>
+			<CY>24</CY> -->
+			<CX>0</CX>
+			<CY>0</CY>
 		</Size>
 		<Style_Transparent>false</Style_Transparent>
 		<!--<TooltipReference/>-->
@@ -412,7 +414,7 @@
 		<Pieces>ContainerSlot9</Pieces>
 		<Pieces>ContainerSlot10</Pieces>
 		<Pieces>Container_Combine</Pieces>
-		<!-- <Pieces>Container_DoneButton</Pieces> -->
+		<Pieces>Container_DoneButton</Pieces>
 		<Pieces>AugmentList</Pieces>
 		<Pieces>Augment_Label</Pieces>
 		<Pieces>InsertButton</Pieces>
